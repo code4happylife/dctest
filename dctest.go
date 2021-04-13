@@ -15,9 +15,9 @@ func GetFloat64() (float64, error){
 		return 0, err
 	}
 	input = strings.TrimSpace(input)
-	number, err := strconv.Atoi(input)
+	number, err := strconv.ParseFloat(input, 64)
 	if err != nil{
 		return 0, err
 	}
-	return float64(number), nil
+	return number, nil
 }
