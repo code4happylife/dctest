@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"net"
 )
-
+// https://go.dev/ref/spec
 // This file is used to get machine ip address
 func main() {
 	ip, err := getClientIp()
