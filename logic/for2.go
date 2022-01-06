@@ -1,0 +1,21 @@
+package main
+
+import "fmt"
+
+func main() {
+	sum := 1
+	for ; sum < 10; {
+		sum += sum
+		fmt.Println(sum)
+	}
+	//fmt.Println(sum)
+}
+
+/**
+2
+4
+8
+16
+
+
+*/
