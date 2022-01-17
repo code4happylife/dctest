@@ -21,3 +21,11 @@ func main() {
 	c, d = d, c
 	fmt.Println(c, d)
 }
+
+/*
+2 3
+3 2
+10 20
+20 10
+
+*/
