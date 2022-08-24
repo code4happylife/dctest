@@ -1,14 +1,13 @@
 package main
 
-
-
 import (
-"fmt"
-"os/exec"
+	"dctest/struct_demo"
+	"fmt"
+	"os/exec"
 )
 
-func main(){
-	command :="ifconfig"
+func main() {
+	command := "ifconfig"
 	cmd := exec.Command("/bin/bash", "-c", command)
 
 	output, err := cmd.Output()
@@ -17,4 +16,6 @@ func main(){
 		return
 	}
 	fmt.Printf("Execute Shell:%s finished with output:\n%s", command, string(output))
+	//	test struct
+	struct_demo.TestForStruct()
 }
